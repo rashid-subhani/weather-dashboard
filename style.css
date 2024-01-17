@@ -1,0 +1,59 @@
+styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container-fluid {
+    margin-top: 20px;
+}
+
+header {
+    background-color: #007bff;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#search-input {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+}
+
+#today,
+#forecast {
+    margin-top: 20px;
+}
+
+.forecast-item {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bootstrap classes for responsiveness and additional styling */
+@media (max-width: 576px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
