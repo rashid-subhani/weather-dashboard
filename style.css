@@ -31,6 +31,9 @@ form {
     color: #ffffff;
     border: none;
 }
+#form-heading{
+    text-align: center;
+}
 
 #today,
 #forecast {
