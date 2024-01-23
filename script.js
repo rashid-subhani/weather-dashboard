@@ -7,7 +7,7 @@
         const currentWeather = document.getElementById('current-weather');
         const forecastEl = document.getElementById('forecast');
 
-        //https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+     //function to get current weather
 
         function getCurrentWeather(city){
             fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + apiKey)
@@ -77,23 +77,3 @@ function displayfivedayForecast(forecast){
         forecastEl.appendChild(forecastContainer);
 }
 }
-
-
-
-
-
-
-{/* <div class="jumbotron">
-<div class="container">
-    <h3>Check Current Weather</h3>
-    <form id="form-submit">
-        <div class="form-group">
-            <label>City Name:</label>
-            <input type="text" class="form-control" id="city" placeholder="ex: London">
-            <button type="submit" class="btn btn-primary mt-3">Submit</button>
-        </div>
-    </form>
-    <p id="city-name"></p>
-    <p id="city-weather"></p>
-    <p id="city-temp"></p>
-</div> */}
